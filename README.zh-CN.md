@@ -25,7 +25,7 @@
 
 > **【栞】**
 >
-> 「欢迎回来。你上次停在《Summer Pockets》第三章——还说今晚要把鸥线推完呢。
+> 「欢迎回来。你上次停在《Summer Pockets》第三章——还说今晚要把鸥线推完呢。<br>
 > 　游戏、时长、评分和那句没写完的进度，都替你好好收着哦。」
 >
 > <div align="right"><sub>▼</sub></div>
@@ -139,7 +139,7 @@ Get-FileHash .\GalShelf-Windows-<版本>.zip -Algorithm SHA256
 
 > **【栞】**
 >
-> 「新的图标，会在之后的更新里和你见面。
+> 「新的图标，会在之后的更新里和你见面。<br>
 > 　那么——下一个故事，也请多指教。」
 >
 > <div align="right"><sub>～ FIN ～</sub></div>

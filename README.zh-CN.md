@@ -17,7 +17,7 @@
 　｜　<a href="#-读取存档安装"><b>📂 读取存档</b></a>
 　｜　<a href="#-系统设定更新与校验"><b>⚙ 系统设定</b></a>
 　｜　<a href="https://galshelf.com"><b>✦ 官方网站</b></a>
-　｜　<a href="README.md"><b>🌐 English</b></a>
+　｜　<a href="README.md#english"><b>🌐 English</b></a>
 
 </div>
 

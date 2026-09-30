@@ -1,6 +1,11 @@
 <!-- galshelf-releases: curated README (zh-CN first, English below). -->
 <a id="chinese"></a>
 
+> [!IMPORTANT]
+> **灰度测试与开源计划**：GalShelf 当前版本仍处于灰度测试阶段，功能、界面和内部实现仍在进行大幅更新，因此暂不开放源代码。待稳定版发布后，将正式开放源代码；具体安排会在本仓库公布。
+>
+> 详见下方的[开源说明](#zh-open-source)。
+
 <div align="center">
 
 <img src="assets/icon.png" width="148" alt="栞 GalShelf 图标">
@@ -12,13 +17,13 @@
 写给 Galgame / 视觉小说玩家的 Windows 书架：<br>
 把游戏整理好，在游戏里截图、识别台词，把玩过的故事记下来，再做成一张分享卡。
 
-<a href="https://github.com/Harihi86/galshelf-releases/releases/latest"><b>⬇ 下载最新版</b></a>
+<a href="https://github.com/Harihi-Works/GalShelf-Dev/releases/latest"><b>⬇ 下载最新版</b></a>
 　·　<a href="#zh-install"><b>安装</b></a>
 　·　<a href="#zh-updates"><b>更新与校验</b></a>
 　·　<a href="https://galshelf.com"><b>官方网站</b></a>
 　·　<a href="#english"><b>🌐 English</b></a>
 
-<sub>当前版本 0.2.6　·　Windows 10 / 11（64 位）　·　无需账号，数据保存在本机　·　简体中文 / English</sub><br>
+<sub>当前灰度测试版本 0.2.6　·　Windows 10 / 11（64 位）　·　本地使用无需账号；同步功能可选　·　简体中文 / English</sub><br>
 <sub>✦ 页首是新设计的图标，之后的版本会在客户端里换上它；0.2.6 的界面仍显示原来的标志。</sub>
 
 </div>
@@ -171,7 +176,7 @@
 
 **需要**：Windows 10 / 11（64 位），以及 Microsoft Edge WebView2 Runtime（Windows 11 通常已自带）。不需要 Python、Node.js 或管理员权限。
 
-1. 在 [Releases](https://github.com/Harihi86/galshelf-releases/releases/latest) 下载 `GalShelf-Windows-<版本>.zip`（0.2.6：[GalShelf-Windows-0.2.6.zip](https://github.com/Harihi86/galshelf-releases/releases/download/v0.2.6/GalShelf-Windows-0.2.6.zip)，约 350 MB）。
+1. 在 [Releases](https://github.com/Harihi-Works/GalShelf-Dev/releases/latest) 下载 `GalShelf-Windows-<版本>.zip`（0.2.6：[GalShelf-Windows-0.2.6.zip](https://github.com/Harihi-Works/GalShelf-Dev/releases/download/v0.2.6/GalShelf-Windows-0.2.6.zip)，约 350 MB）。
 2. 把**整个** ZIP 解压到一个新文件夹，让 `components` 文件夹（aria2、Magpie、Locale Emulator、Real-ESRGAN）和 `GalShelf.exe` 放在一起。
 3. 运行 `GalShelf.exe`，首次启动有中英双语的引导。
 
@@ -185,7 +190,7 @@
 ## 🔏 更新与校验
 
 - 客户端在应用内检查更新：它读取本仓库最新 Release 中的 `latest.json`（内含 Ed25519 签名的更新清单）。只有清单签名、安装包大小和 SHA-256 **全部一致**时才会安装更新；游戏运行时不会安装更新。
-- `releases/v<版本>/` 保存每个已发布版本的清单、校验值和更新说明；`stable/latest.json` 是当前稳定版清单的副本，`stable/latest.json.sig` 是它的独立签名，供手动核对。
+- `releases/v<版本>/` 保存每个已发布版本的清单、校验值和更新说明；`stable/latest.json` 是当前发布渠道的更新清单副本（`stable` 为渠道目录名，不代表当前版本已结束灰度测试），`stable/latest.json.sig` 是它的独立签名，供手动核对。
 - 更新清单使用以下公钥签名（Ed25519，base64）：
 
 ```
@@ -200,7 +205,15 @@ Get-FileHash .\GalShelf-Windows-<版本>.zip -Algorithm SHA256
 
 ## 📜 版本记录
 
-每个版本的更新说明都在 [Releases](https://github.com/Harihi86/galshelf-releases/releases) 页面，也保存在 [`releases/`](releases/) 目录中。使用说明与常见问题见 [galshelf.com/docs](https://galshelf.com/docs)。
+每个版本的更新说明都在 [Releases](https://github.com/Harihi-Works/GalShelf-Dev/releases) 页面，也保存在 [`releases/`](releases/) 目录中。使用说明与常见问题见 [galshelf.com/docs](https://galshelf.com/docs)。
+
+<a id="zh-open-source"></a>
+
+## 🔓 开源说明
+
+- **当前阶段**：GalShelf 仍处于灰度测试与快速迭代中，项目自身的源代码暂不公开。本仓库目前用于发布说明、使用文档、截图、下载与更新校验信息；仓库公开不代表应用源代码已经开源。
+- **后续计划**：待稳定版发布后开放源代码。源码发布地址、开源许可证及参与贡献的方式，将在正式开源时一并公布；目前尚未确定具体开源日期。
+- **第三方组件**：随附的开源组件继续遵循各自的许可证，相关项目链接见下方「致谢与许可」。GalShelf 自身的源码开放计划不改变这些组件的许可条款。
 
 ## 💐 致谢与许可
 
@@ -215,6 +228,11 @@ Get-FileHash .\GalShelf-Windows-<版本>.zip -Algorithm SHA256
 
 <a id="english"></a>
 
+> [!IMPORTANT]
+> **Beta testing and open-source plans**: GalShelf is still in a phased beta rollout, with substantial changes underway to its features, interface and implementation. The source code is therefore not public yet. It will be opened when the stable release is ready, with details announced in this repository.
+>
+> See the [open-source policy](#en-open-source) below.
+
 <!-- galshelf-releases: curated README (en). -->
 <div align="center">
 
@@ -227,13 +245,13 @@ Get-FileHash .\GalShelf-Windows-<版本>.zip -Algorithm SHA256
 A Windows bookshelf for people who play galgames and visual novels:<br>
 keep your games in order, take screenshots and capture dialogue in game, remember every story you played, and turn it into a share card.
 
-<a href="https://github.com/Harihi86/galshelf-releases/releases/latest"><b>⬇ Download</b></a>
+<a href="https://github.com/Harihi-Works/GalShelf-Dev/releases/latest"><b>⬇ Download</b></a>
 　·　<a href="#en-install"><b>Install</b></a>
 　·　<a href="#en-updates"><b>Updates & verification</b></a>
 　·　<a href="https://galshelf.com"><b>Website</b></a>
 　·　<a href="#chinese"><b>🌐 简体中文</b></a>
 
-<sub>Current version 0.2.6　·　Windows 10 / 11 (64-bit)　·　No account needed; your data stays on your PC　·　Simplified Chinese / English</sub><br>
+<sub>Current beta version 0.2.6　·　Windows 10 / 11 (64-bit)　·　No account needed for local use; sync is optional　·　Simplified Chinese / English</sub><br>
 <sub>✦ The icon above is the new design; it arrives in the app with a later version. 0.2.6 still shows the previous logo.</sub>
 
 </div>
@@ -386,7 +404,7 @@ Cloud saves and shelf sync are two different things: cloud saves back up your **
 
 **You need** Windows 10 or 11 (64-bit) and the Microsoft Edge WebView2 Runtime (Windows 11 usually has it). No Python, Node.js or administrator rights are required.
 
-1. Download `GalShelf-Windows-<version>.zip` from the [latest release](https://github.com/Harihi86/galshelf-releases/releases/latest) (0.2.6: [GalShelf-Windows-0.2.6.zip](https://github.com/Harihi86/galshelf-releases/releases/download/v0.2.6/GalShelf-Windows-0.2.6.zip), about 350 MB).
+1. Download `GalShelf-Windows-<version>.zip` from the [latest release](https://github.com/Harihi-Works/GalShelf-Dev/releases/latest) (0.2.6: [GalShelf-Windows-0.2.6.zip](https://github.com/Harihi-Works/GalShelf-Dev/releases/download/v0.2.6/GalShelf-Windows-0.2.6.zip), about 350 MB).
 2. Extract the **whole** ZIP into a new folder and keep the `components` folder (aria2, Magpie, Locale Emulator, Real-ESRGAN) next to `GalShelf.exe`.
 3. Start `GalShelf.exe`; the first launch shows a short bilingual welcome tour.
 
@@ -400,7 +418,7 @@ Cloud saves and shelf sync are two different things: cloud saves back up your **
 ## 🔏 Updates and verification
 
 - GalShelf checks for updates by reading `latest.json` from the latest release in this repository (an update manifest with an embedded Ed25519 signature). An update is installed only when the manifest signature, the package size and its SHA-256 **all** match, and never while a game is running.
-- `releases/v<version>/` keeps the manifest, checksums and release notes of every published version; `stable/latest.json` is a copy of the current stable manifest and `stable/latest.json.sig` its detached signature, for checking by hand.
+- `releases/v<version>/` keeps the manifest, checksums and release notes of every published version; `stable/latest.json` is a copy of the current release-channel manifest (`stable` is the channel directory name, not a declaration that beta testing has ended) and `stable/latest.json.sig` its detached signature, for checking by hand.
 - Update manifests are signed with this public key (Ed25519, base64):
 
 ```
@@ -415,7 +433,15 @@ Get-FileHash .\GalShelf-Windows-<version>.zip -Algorithm SHA256
 
 ## 📜 Release history
 
-Release notes for every version are on the [Releases](https://github.com/Harihi86/galshelf-releases/releases) page and in the [`releases/`](releases/) folder. Guides and FAQs live at [galshelf.com/docs](https://galshelf.com/docs).
+Release notes for every version are on the [Releases](https://github.com/Harihi-Works/GalShelf-Dev/releases) page and in the [`releases/`](releases/) folder. Guides and FAQs live at [galshelf.com/docs](https://galshelf.com/docs).
+
+<a id="en-open-source"></a>
+
+## 🔓 Open-source policy
+
+- **Current status**: GalShelf is undergoing phased beta testing and rapid development, and its own source code is not public yet. This repository currently provides announcements, documentation, screenshots, downloads and update-verification metadata; a public repository does not mean the application source has been open-sourced.
+- **Next steps**: The source code will be opened when the stable release is ready. The source location, open-source license and contribution guidelines will be announced together at that time; no specific date has been set yet.
+- **Third-party components**: Bundled open-source components retain their respective licenses; project links are listed under Credits and licenses below. GalShelf's source-release plans do not change those terms.
 
 ## 💐 Credits and licenses
 

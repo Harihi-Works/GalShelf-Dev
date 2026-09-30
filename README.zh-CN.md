@@ -1,6 +1,11 @@
 <!-- galshelf-releases: curated README (zh-CN). -->
 <a id="chinese"></a>
 
+> [!IMPORTANT]
+> **灰度测试与开源计划**：GalShelf 当前版本仍处于灰度测试阶段，功能、界面和内部实现仍在进行大幅更新，因此暂不开放源代码。待稳定版发布后，将正式开放源代码；具体安排会在本仓库公布。
+>
+> 详见下方的[开源说明](#zh-open-source)。
+
 <div align="center">
 
 <img src="assets/icon.png" width="148" alt="栞 GalShelf 图标">
@@ -12,13 +17,13 @@
 写给 Galgame / 视觉小说玩家的 Windows 书架：<br>
 把游戏整理好，在游戏里截图、识别台词，把玩过的故事记下来，再做成一张分享卡。
 
-<a href="https://github.com/Harihi86/galshelf-releases/releases/latest"><b>⬇ 下载最新版</b></a>
+<a href="https://github.com/Harihi-Works/GalShelf-Dev/releases/latest"><b>⬇ 下载最新版</b></a>
 　·　<a href="#zh-install"><b>安装</b></a>
 　·　<a href="#zh-updates"><b>更新与校验</b></a>
 　·　<a href="https://galshelf.com"><b>官方网站</b></a>
 　·　<a href="README.md#english"><b>🌐 English</b></a>
 
-<sub>当前版本 0.2.6　·　Windows 10 / 11（64 位）　·　无需账号，数据保存在本机　·　简体中文 / English</sub><br>
+<sub>当前灰度测试版本 0.2.6　·　Windows 10 / 11（64 位）　·　本地使用无需账号；同步功能可选　·　简体中文 / English</sub><br>
 <sub>✦ 页首是新设计的图标，之后的版本会在客户端里换上它；0.2.6 的界面仍显示原来的标志。</sub>
 
 </div>
@@ -171,7 +176,7 @@
 
 **需要**：Windows 10 / 11（64 位），以及 Microsoft Edge WebView2 Runtime（Windows 11 通常已自带）。不需要 Python、Node.js 或管理员权限。
 
-1. 在 [Releases](https://github.com/Harihi86/galshelf-releases/releases/latest) 下载 `GalShelf-Windows-<版本>.zip`（0.2.6：[GalShelf-Windows-0.2.6.zip](https://github.com/Harihi86/galshelf-releases/releases/download/v0.2.6/GalShelf-Windows-0.2.6.zip)，约 350 MB）。
+1. 在 [Releases](https://github.com/Harihi-Works/GalShelf-Dev/releases/latest) 下载 `GalShelf-Windows-<版本>.zip`（0.2.6：[GalShelf-Windows-0.2.6.zip](https://github.com/Harihi-Works/GalShelf-Dev/releases/download/v0.2.6/GalShelf-Windows-0.2.6.zip)，约 350 MB）。
 2. 把**整个** ZIP 解压到一个新文件夹，让 `components` 文件夹（aria2、Magpie、Locale Emulator、Real-ESRGAN）和 `GalShelf.exe` 放在一起。
 3. 运行 `GalShelf.exe`，首次启动有中英双语的引导。
 
@@ -185,7 +190,7 @@
 ## 🔏 更新与校验
 
 - 客户端在应用内检查更新：它读取本仓库最新 Release 中的 `latest.json`（内含 Ed25519 签名的更新清单）。只有清单签名、安装包大小和 SHA-256 **全部一致**时才会安装更新；游戏运行时不会安装更新。
-- `releases/v<版本>/` 保存每个已发布版本的清单、校验值和更新说明；`stable/latest.json` 是当前稳定版清单的副本，`stable/latest.json.sig` 是它的独立签名，供手动核对。
+- `releases/v<版本>/` 保存每个已发布版本的清单、校验值和更新说明；`stable/latest.json` 是当前发布渠道的更新清单副本（`stable` 为渠道目录名，不代表当前版本已结束灰度测试），`stable/latest.json.sig` 是它的独立签名，供手动核对。
 - 更新清单使用以下公钥签名（Ed25519，base64）：
 
 ```
@@ -200,7 +205,15 @@ Get-FileHash .\GalShelf-Windows-<版本>.zip -Algorithm SHA256
 
 ## 📜 版本记录
 
-每个版本的更新说明都在 [Releases](https://github.com/Harihi86/galshelf-releases/releases) 页面，也保存在 [`releases/`](releases/) 目录中。使用说明与常见问题见 [galshelf.com/docs](https://galshelf.com/docs)。
+每个版本的更新说明都在 [Releases](https://github.com/Harihi-Works/GalShelf-Dev/releases) 页面，也保存在 [`releases/`](releases/) 目录中。使用说明与常见问题见 [galshelf.com/docs](https://galshelf.com/docs)。
+
+<a id="zh-open-source"></a>
+
+## 🔓 开源说明
+
+- **当前阶段**：GalShelf 仍处于灰度测试与快速迭代中，项目自身的源代码暂不公开。本仓库目前用于发布说明、使用文档、截图、下载与更新校验信息；仓库公开不代表应用源代码已经开源。
+- **后续计划**：待稳定版发布后开放源代码。源码发布地址、开源许可证及参与贡献的方式，将在正式开源时一并公布；目前尚未确定具体开源日期。
+- **第三方组件**：随附的开源组件继续遵循各自的许可证，相关项目链接见下方「致谢与许可」。GalShelf 自身的源码开放计划不改变这些组件的许可条款。
 
 ## 💐 致谢与许可
 

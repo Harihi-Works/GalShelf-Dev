@@ -1,0 +1,3 @@
+b98a4362886e04c3b3f1eafbf2497091ef164eb9bb1c1d9018c57d4f9d8eb3e2  GalShelf-Windows-0.2.7.zip
+3d47a6ef5f9d2bb4f1fded812448ee4dce21c11a0dced812d8e86d513d361fca  latest.json
+422b9debb418c4913975ad5ebca27e2f5b72760bcd669c13fbb6e234a2a66ebd  latest.json.sig

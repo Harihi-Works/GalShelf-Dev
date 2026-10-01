@@ -2,7 +2,7 @@
 
 # Galguard · 文件安全与完整性
 
-[项目首页](README.md#chinese) · [GalShelf](GALSHELF.md#chinese) · [Galdex](GALDEX.md#chinese) · [Galdrive](GALDRIVE.md#chinese) · [English](#english)
+[返回 GalShelf 首页](README.md#chinese) · [Galdex](GALDEX.md#chinese) · [Galdrive](GALDRIVE.md#chinese) · [English](#english)
 
 **知道游戏文件发生了什么变化，并保留可以恢复的处理方式。**
 
@@ -32,7 +32,7 @@ Galdex 数据可向兼容客户端提供作品身份依据，但不能代替扫�
 
 Guard 是可选组件；不安装时，GalShelf 仍能管理游戏，并保留自身已有的启动文件变化提示。现有客户端可在「设置 › 隐私与安全」中检查、下载、校验并安装 Guard。
 
-0.2.6 文档说明 Guard 安装包尚未做代码签名，安装时 Windows 可能请求管理员权限。具体指引与限制见 [GalShelf 完整介绍](GALSHELF.md#chinese)。功能说明不是安全认证或零风险保证。
+0.2.6 文档说明 Guard 安装包尚未做代码签名，安装时 Windows 可能请求管理员权限。具体指引与限制见 [GalShelf 首页](README.md#chinese)。功能说明不是安全认证或零风险保证。
 
 ---
 
@@ -40,7 +40,7 @@ Guard 是可选组件；不安装时，GalShelf 仍能管理游戏，并保留�
 
 # Galguard · File security and integrity
 
-[Project overview](README.md#english) · [GalShelf](GALSHELF.md#english) · [Galdex](GALDEX.md#english) · [Galdrive](GALDRIVE.md#english) · [简体中文](#chinese)
+[GalShelf home](README.md#english) · [Galdex](GALDEX.md#english) · [Galdrive](GALDRIVE.md#english) · [简体中文](#chinese)
 
 **Understand changes to game files and keep recovery possible.**
 
@@ -70,4 +70,4 @@ Galdex data can add identity evidence in compatible clients. It does not replace
 
 Guard is optional. Without it, GalShelf can still manage games and retain its own existing launch-file change warnings. The current client offers checking, downloading, verification and installation under **Settings › Privacy & Security**.
 
-The 0.2.6 documentation notes that the Guard installer is not code-signed and Windows may request administrator approval. See the [full GalShelf introduction](GALSHELF.md#english) for existing instructions and limitations. A feature description is not a security certification or zero-risk guarantee.
+The 0.2.6 documentation notes that the Guard installer is not code-signed and Windows may request administrator approval. See the [GalShelf README](README.md#english) for existing instructions and limitations. A feature description is not a security certification or zero-risk guarantee.

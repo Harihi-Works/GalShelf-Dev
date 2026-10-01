@@ -2,7 +2,7 @@
 
 # Galdrive · 存档备份与多设备同步
 
-[项目首页](README.md#chinese) · [GalShelf](GALSHELF.md#chinese) · [Galdex](GALDEX.md#chinese) · [Galguard](GALGUARD.md#chinese) · [English](#english)
+[返回 GalShelf 首页](README.md#chinese) · [Galdex](GALDEX.md#chinese) · [Galguard](GALGUARD.md#chinese) · [English](#english)
 
 **换一台电脑，也能找回自己选择继续的那份进度。**
 
@@ -62,7 +62,7 @@ Galdrive 关注存档备份，不自动将游戏程序、整部游戏或任意�
 
 # Galdrive · Save backup and multi-device synchronisation
 
-[Project overview](README.md#english) · [GalShelf](GALSHELF.md#english) · [Galdex](GALDEX.md#english) · [Galguard](GALGUARD.md#english) · [简体中文](#chinese)
+[GalShelf home](README.md#english) · [Galdex](GALDEX.md#english) · [Galguard](GALGUARD.md#english) · [简体中文](#chinese)
 
 **Continue on another PC with the progress you choose to keep.**
 

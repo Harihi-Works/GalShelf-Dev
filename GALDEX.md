@@ -2,7 +2,7 @@
 
 # Galdex · 作品指纹与存档规则维护
 
-[项目首页](README.md#chinese) · [GalShelf](GALSHELF.md#chinese) · [Galguard](GALGUARD.md#chinese) · [Galdrive](GALDRIVE.md#chinese) · [English](#english)
+[返回 GalShelf 首页](README.md#chinese) · [Galguard](GALGUARD.md#chinese) · [Galdrive](GALDRIVE.md#chinese) · [English](#english)
 
 **为「本地这些文件属于哪部作品」提供可核验的依据。**
 
@@ -56,7 +56,7 @@ Galdex 将经核验的文件指纹与作品身份关联。面对已收录文件�
 
 # Galdex · Work fingerprints and save-location rules
 
-[Project overview](README.md#english) · [GalShelf](GALSHELF.md#english) · [Galguard](GALGUARD.md#english) · [Galdrive](GALDRIVE.md#english) · [简体中文](#chinese)
+[GalShelf home](README.md#english) · [Galguard](GALGUARD.md#english) · [Galdrive](GALDRIVE.md#english) · [简体中文](#chinese)
 
 **Verifiable evidence for associating local files with the right work.**
 

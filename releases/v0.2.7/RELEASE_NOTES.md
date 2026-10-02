@@ -1,5 +1,11 @@
 ## GalShelf 0.2.7
 
+### Windows Package Refresh (2026-10-02)
+
+- Includes the approved Google Drive desktop and OneDrive personal-account application settings for clean installations. Users still sign in and consent themselves; existing custom settings remain in place.
+- Update signing uses the new October release key after the release machine was reinstalled. Earlier packages do not trust that key: download and extract this refreshed package manually once. The version remains 0.2.7, so installed 0.2.7 copies will not offer it as an automatic update.
+- No personal accounts, cloud tokens, website secrets or signing private keys are included. Save data and backup formats are unchanged.
+
 ### 版本号说明
 
 - 0.2.7 接续 0.2.6，以下内容相对 0.2.6 说明。原有设置与数据在升级后保留。

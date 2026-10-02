@@ -212,6 +212,7 @@ Galdex 与 Galdrive 的核心功能已基本完成。Galdex 仍为内部维护�
 - 更新清单使用以下公钥签名（Ed25519，base64）：
 
 ```
+galshelf-update-2026-10: hwzfdi24DNRten45CWPvxS1+0BTTgzSMxn5EdVFKxvY=
 galshelf-update-2026-09: II1VyOQWGZphhHvY0bcjvqpuYkb1UjBmzb75h+VfuQc=
 ```
 
@@ -458,6 +459,7 @@ Core development of Galdex and Galdrive is substantially complete. Galdex remain
 - Update manifests are signed with this public key (Ed25519, base64):
 
 ```
+galshelf-update-2026-10: hwzfdi24DNRten45CWPvxS1+0BTTgzSMxn5EdVFKxvY=
 galshelf-update-2026-09: II1VyOQWGZphhHvY0bcjvqpuYkb1UjBmzb75h+VfuQc=
 ```
 

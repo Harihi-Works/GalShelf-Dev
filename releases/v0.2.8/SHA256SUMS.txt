@@ -1,0 +1,5 @@
+fab09978b6995e580e5dce66a69cccec4a8831b49fe839e8720d497c2bf75bd7  GalShelf-0.2.8-Windows-x64-Full.zip
+b06e16d355c0eb272838b79b65d633b27050d0db82dc742d5a019c6941c77f1a  GalShelf-0.2.8-Windows-x64-Lite.zip
+e65441af2b8d4b4aa544c1912a7b059cd1dbf0528d49e04c7c41eab226408bf6  GalShelf-Windows-0.2.8.zip
+7f8fed8defaf7f6f02eaff0fdcdf79e8f466f3d04739fc60c3c80dcb89e0c437  latest.json
+32dff8254991dc9f6af93d9df8b1c7ce04b06ba338662004708a10bbf591acba  latest.json.sig

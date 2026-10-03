@@ -24,7 +24,7 @@
 　·　<a href="https://galshelf.com"><b>官方网站</b></a>
 　·　<a href="README.md#english"><b>🌐 English</b></a>
 
-<sub>当前灰度测试版本 0.2.7　·　Windows 10 / 11（64 位）　·　本地使用无需账号；同步功能可选　·　简体中文 / English</sub>
+<sub>当前灰度测试版本 0.2.8　·　Windows 10 / 11（64 位）　·　本地使用无需账号；同步功能可选　·　简体中文 / English</sub>
 
 </div>
 
@@ -33,7 +33,7 @@
 <a href="assets/screenshots/zh-CN/library.jpg"><img src="assets/screenshots/zh-CN/library.jpg" alt="游戏库：十四部作品的封面墙，带状态筛选和每部作品的游玩时长"></a>
 
 > [!NOTE]
-> **版本与截图**　当前发布版本为 [GalShelf 0.2.7](https://github.com/Harihi-Works/GalShelf-Dev/releases/tag/v0.2.7)。以下保留 0.2.6 的功能介绍与演示截图，版本限定的操作和限制按该版本阅读；最新界面与改动请结合 0.2.7 发布说明查看。
+> **版本与截图**　当前发布版本为 [GalShelf 0.2.8](https://github.com/Harihi-Works/GalShelf-Dev/releases/tag/v0.2.8)。以下保留 0.2.6 的功能介绍与演示截图，版本限定的操作和限制按该版本阅读；最新界面与改动请结合 0.2.8 发布说明查看。
 >
 > **关于截图**　全部画面都来自已发布的 **GalShelf 0.2.6** 客户端，使用一份独立的演示数据：作品名称与封面来自公开资料库，状态、评分、游玩时长、票根、短评和阅读笔记都是为演示编写的，不属于任何真实用户。
 >
@@ -194,8 +194,11 @@ Galdex 与 Galdrive 的核心功能已基本完成。Galdex 仍为内部维护�
 
 **需要**：Windows 10 / 11（64 位），以及 Microsoft Edge WebView2 Runtime（Windows 11 通常已自带）。不需要 Python、Node.js 或管理员权限。
 
-1. 在 [Releases](https://github.com/Harihi-Works/GalShelf-Dev/releases/latest) 下载 `GalShelf-Windows-<版本>.zip`，请以所选 Release 的安装包和说明为准。
-2. 把**整个** ZIP 解压到一个新文件夹，让 `components` 文件夹（aria2、Magpie、Locale Emulator、Real-ESRGAN）和 `GalShelf.exe` 放在一起。
+1. 在 [Releases](https://github.com/Harihi-Works/GalShelf-Dev/releases/latest) 下载安装包（自 0.2.8 起每个版本提供两种，使用同一个 `GalShelf.exe`）：
+   - **Full**（推荐）：`GalShelf-<版本>-Windows-x64-Full.zip`，预装 Locale Emulator、Magpie 和分享卡素材库，解压即可使用。
+   - **Lite**：`GalShelf-<版本>-Windows-x64-Lite.zip`，下载更小；可关联你已安装的 Locale Emulator / Magpie，或之后在 GalShelf 中按需安装。
+   - `GalShelf-Windows-<版本>.zip` 是应用内更新使用的更新包。请以所选 Release 的安装包和说明为准。
+2. 把**整个** ZIP 解压到一个新文件夹，让 `components` 文件夹（aria2、Real-ESRGAN）以及 Full 的 `modules` 文件夹和 `GalShelf.exe` 放在一起。
 3. 运行 `GalShelf.exe`，首次启动有中英双语的引导。
 
 > [!TIP]
@@ -219,7 +222,7 @@ galshelf-update-2026-09: II1VyOQWGZphhHvY0bcjvqpuYkb1UjBmzb75h+VfuQc=
 想自己核对下载的安装包，可以在 PowerShell 中运行，并与同一 Release 里的 `SHA256SUMS.txt` 对照：
 
 ```powershell
-Get-FileHash .\GalShelf-Windows-<版本>.zip -Algorithm SHA256
+Get-FileHash .\GalShelf-<版本>-Windows-x64-Full.zip -Algorithm SHA256
 ```
 
 ## 📜 版本记录
